@@ -11,7 +11,7 @@ import org.mapstruct.ReportingPolicy;
 unmappedSourcePolicy = ReportingPolicy.IGNORE,
 unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface BookMapper {
-    @Mapping(target = "categories.id", source = "categoriesId")
+    @Mapping(target = "categories.id", source = "categories_id")
     Book requestToBook(BookRequest request);
     BookResponse bookToResponse(Book book);
 }

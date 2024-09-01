@@ -30,7 +30,7 @@ public class BookRequest {
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     LocalDate publishedDate;
     @NotNull
-    Long categoriesId;
+    Long categories_id;
     @Size(min=5,max=25)
     String description;
     @NotNull

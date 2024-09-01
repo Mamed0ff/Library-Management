@@ -13,6 +13,5 @@ unmappedSourcePolicy = ReportingPolicy.IGNORE,
 unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface AuthorMapper {
     AuthorResponse modelToResponse(Author author);
-    @Mapping(target = "name", constant = "rikoo")
     Author requestToModel(AuthorRequest request);
 }
